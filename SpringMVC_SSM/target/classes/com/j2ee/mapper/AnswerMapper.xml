@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.j2ee.mapper.AnswerMapper">
+	<select id="findLargestAnswerID" resultType="int">
+		select max(answerID) from answer
+	</select>
+	<select id="findAnswerByQuestionID" parameterType="int" resultType="com.j2ee.po.Answer">
+		select * from answer where questionID=#{questionID}	
+	</select>
+	
+	<select id="findAnswerByUserID" parameterType="String" resultType="com.j2ee.po.Answer">
+		select * from answer where userID=#{userID}
+	</select>
+	
+	<insert id="addAnswer" parameterType="com.j2ee.po.Answer">
+		insert into answer(questionID,userID,createTime,answer)
+		values(#{questionID},#{userID},#{createTime},#{answer})
+	</insert>
+	
+	<delete id="deleteAnswer" parameterType="int">
+		delete from answer where answerID=#{answerID}
+	</delete>
+	
+	<update id="updateStar" parameterType="com.j2ee.po.Answer">
+		update answer 
+		set star=star+#{star}
+		where answerID=#{answerID}
+	</update>
+</mapper>

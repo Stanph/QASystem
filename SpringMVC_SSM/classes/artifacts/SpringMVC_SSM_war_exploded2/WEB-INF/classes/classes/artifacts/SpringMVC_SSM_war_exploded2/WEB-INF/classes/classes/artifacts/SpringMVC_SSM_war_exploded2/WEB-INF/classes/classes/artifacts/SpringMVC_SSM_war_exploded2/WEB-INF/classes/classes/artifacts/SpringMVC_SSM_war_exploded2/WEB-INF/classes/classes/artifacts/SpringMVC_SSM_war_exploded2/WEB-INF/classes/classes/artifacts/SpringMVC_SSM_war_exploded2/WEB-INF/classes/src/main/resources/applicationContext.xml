@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/aop
+         http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+         http://www.springframework.org/schema/tx
+         http://www.springframework.org/schema/tx/spring-tx-4.1.xsd
+           http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context-4.1.xsd  " >
+
+    <!-- 开启扫描 -->
+    <context:component-scan base-package="com.j2ee.service"/>
+    <!-- 1.将连接池放入spring容器 -->
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+        <!--  指定数据库驱动-->
+        <property name="driverClassName"><value>${jdbc.driver}</value></property>
+        <!--  指定连接数据库的URL-->
+        <property name="url"><value>${jdbc.url}</value></property>
+        <!--  root为数据库的用户名-->
+        <property name="username"><value>${jdbc.user}</value></property>
+        <!--  pass为数据库密码-->
+        <property name="password"><value>${jdbc.password}</value></property>
+          <!--maxTotal 最大连接数-->
+        <property name="maxTotal"><value>${jdbc.maxTotal}</value></property>
+
+        <property name="maxIdle"><value>${jdbc.maxIdle}</value></property>
+        <property name="initialSize"><value>${jdbc.initialSize}</value></property>
+    </bean>
+
+    <!--  配置事务管理器 -->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!-- 关联jdbc.properties -->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+     <!--配置SessionFactory-->
+    <!--<bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">-->
+        <!--<property name="configLocation" value="classpath:mybatis-config.xml"></property>-->
+        <!--<property name="dataSource" ref="dataSource"></property>-->
+    <!--</bean>-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="configLocation" value="classpath:mybatis-config.xml"></property>
+    </bean>
+
+<!--    Mapper代理开发-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.j2ee.mapper"></property>
+    </bean>
+
+    <!--&lt;!&ndash; 03.生成dao代理對象 &ndash;&gt;-->
+    <!--<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
+        <!--<property name="sqlSessionFactoryBeanName" value="sessionFactory"></property>-->
+        <!--<property name="basePackage" value="cn.jpp.mapper"></property>-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash; 05.配置action &ndash;&gt;-->
+    <!--<bean id="/userAction.do" class="cn.jpp.controller.UserInfoController">-->
+        <!--<property name="service" ref="userService"></property>-->
+    <!--</bean>-->
+
+
+    <!--配置开启事务操作 -->
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!--指定在连接方法上应用的事务属性 -->
+            <tx:method name="add*" isolation="DEFAULT" propagation="REQUIRED"/>
+        </tx:attributes>
+    </tx:advice>
+    <!-- aop配置 -->
+    <aop:config>
+        <aop:pointcut expression="execution(* *..service.*.*(..))" id="stockPointcut"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="stockPointcut"/>
+    </aop:config>
+
+</beans>

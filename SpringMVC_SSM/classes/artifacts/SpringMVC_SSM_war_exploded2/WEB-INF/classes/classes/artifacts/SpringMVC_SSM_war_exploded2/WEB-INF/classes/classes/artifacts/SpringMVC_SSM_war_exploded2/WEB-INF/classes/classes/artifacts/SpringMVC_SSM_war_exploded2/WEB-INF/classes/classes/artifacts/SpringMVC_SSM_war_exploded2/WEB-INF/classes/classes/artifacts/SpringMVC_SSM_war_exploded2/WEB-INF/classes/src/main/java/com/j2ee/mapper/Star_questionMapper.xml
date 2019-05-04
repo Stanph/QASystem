@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.Star_questionMapper">
+	<select id="findUserStarQuestion" parameterType="String" resultType="po.Star_question">
+		select * from star_question where userID=#{userID}
+	</select>
+	
+	<insert id="addQuestionStar" parameterType="po.Star_question">
+		insert into star_question(questionID,userID,starTime)
+		values(#{questionID},#{userID},#{starTime})
+	</insert>
+	
+	<delete id="deleteQuestionStar" parameterType="po.Star_question">
+		delete from star_question where questionID=#{questionID} and userID=#{userID}
+	</delete>
+</mapper>

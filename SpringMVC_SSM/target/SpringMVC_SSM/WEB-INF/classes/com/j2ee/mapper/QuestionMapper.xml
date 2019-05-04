@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.j2ee.mapper.QuestionMapper">
+	<select id="findQuestionWithAnswers" parameterType="int" resultMap="QuestionWithAnswersResult">
+		select q.*,a.*
+		from question q, answer a
+		where q.questionID=a.questionID
+		and q.questionID=#{questionID}
+	</select>
+	<resultMap id="QuestionWithAnswersResult" type="Question">
+		<id property="questionID" column="questionID"></id>
+		<result property="userID" column="userID"/>
+		<result property="createTime" column="createTime"/>
+		<result property="question" column="question"/>
+		<result property="detail" column="detail"/>
+		<result property="star" column="star"/>
+		<result property="pageviews" column="pageviews"/>
+		<collection property="answers" ofType="Answer">
+			<id property="answerID" column="answerID"/>
+			<result property="questionID" column="questionID"/>
+			<result property="userID" column="userID"/>
+			<result property="createTime" column="createTime"/>
+			<result property="answer" column="answer"/>
+			<result property="star" column="star"/>
+		</collection>
+	</resultMap>
+	<select id="findLargestQuestionID" resultType="int">
+		select max(questionID) from question
+	</select>
+	<select id="findAllQuestion" resultType="com.j2ee.po.Question">
+		select * from question limit #{0},#{1}
+	</select>
+	<select id="findQuestionByUserID" parameterType="String" resultType="com.j2ee.po.Question">
+		select * from question where userID=#{userID}
+	</select>
+	<select id="findQuestionByQuestionID" parameterType="int" resultType="com.j2ee.po.Question">
+		select * from question where questionID=#{questionID}
+	</select>
+	<insert id="addQuestion" parameterType="com.j2ee.po.Question">
+		insert into question(userID,createTime,question,detail)
+		values(#{userID},#{createTime},#{question},#{detail})
+	</insert>
+	
+	<delete id="deleteQuestion" parameterType="int">
+		delete from question where questionID = #{questionID}
+	</delete>
+	
+	<update id="updateStarOrPageviews" parameterType="com.j2ee.po.Question">
+		update question 
+		<set>
+			<if test="star!=null and star!=''">
+				star=star+#{star},
+			</if>
+			<if test="pageviews!=null and pageviews!=''">
+				pageviews=pageviews+1,
+			</if>
+		</set>
+		where questionID=#{questionID}
+	</update>
+	
+</mapper>

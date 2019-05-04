@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:tx="http://www.springframework.org/schema/tx"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+<!--	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--	   xmlns:context="http://www.springframework.org/schema/context"-->
+<!--	   xmlns:mvc="http://www.springframework.org/schema/cache"-->
+<!--	   xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+<!--   http://www.springframework.org/schema/beans/spring-beans-4.3.xsd-->
+<!--   http://www.springframework.org/schema/context-->
+<!--   http://www.springframework.org/schema/context/spring-context-4.3.xsd http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">-->
+
+
+	<!--指定需要扫描的包-->
+	<context:component-scan
+			base-package="com.j2ee.controller" />
+
+	<!--	配置注解驱动-->
+	<mvc:annotation-driven />
+
+
+
+
+	<!--	配置静态资源的访问映射，此配置中的文件，将不被前端控制器拦截-->
+	<mvc:resources location="/js/" mapping="/js/**"/>
+
+	<!--定义视图解析器-->
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+<!--	配置拦截器-->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**"/>
+			<bean class="com.j2ee.interceptor.LoginInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+	<!--json转化器，它可以将结果转化-->
+	<bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+		<property name="supportedMediaTypes">
+			<list>
+				<value>text/json;charset=UTF-8</value>
+			</list>
+		</property>
+	</bean>
+</beans>
