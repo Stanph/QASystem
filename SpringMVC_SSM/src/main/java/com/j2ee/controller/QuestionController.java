@@ -1,15 +1,14 @@
 package com.j2ee.controller;
 
+import com.auth0.jwt.interfaces.Claim;
 import com.j2ee.mapper.QuestionMapper;
 import com.j2ee.po.Question;
+import com.j2ee.util.JwtUtil;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -23,9 +22,11 @@ import java.util.Map;
 public class QuestionController {
     @RequestMapping(value = "/questionList",method = RequestMethod.POST)
     @ResponseBody
-    public List<Question> questionList( int p,  int num){
+        public List<Question> questionList(@RequestBody(required=true) Map<String,Object> map){
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
         QuestionMapper questionMapper=applicationContext.getBean(QuestionMapper.class);
+        int p= (int) map.get("p");
+        int num= (int) map.get("num");
         int offSet=(p-1)*num;
         List<Question> question = questionMapper.findAllQuestion(offSet,num);
         for(int i=0;i<question.size();i++){
@@ -42,20 +43,25 @@ public class QuestionController {
     }
     @RequestMapping(value = "/questionDetail",method = RequestMethod.POST)
     @ResponseBody
-    public Question questionDetail(int questionID){
+    public Question questionDetail(@RequestBody Question question){
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
         QuestionMapper questionMapper=applicationContext.getBean(QuestionMapper.class);
-        Question question=questionMapper.findQuestionWithAnswers(questionID);   //没有回答时 无结果
-        return question;
+        Question question1=questionMapper.findQuestionWithAnswers(question.getQuestionID());   //没有回答时 无结果
+        return question1;
     }
     @RequestMapping(value = "/addQuestion",method = RequestMethod.POST)
     @ResponseBody
-    public Map addQuestion(String token,String question,String detail) throws ParseException {
+    public Map addQuestion(@RequestBody(required=true) Map<String,Object> map) throws ParseException {
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
         QuestionMapper questionMapper=applicationContext.getBean(QuestionMapper.class);
+        String token = (String) map.get("token");
+        Map<String, Claim> a = JwtUtil.verifyToken(token);
+        String userID = JwtUtil.getAppUID(token);
         Question question1=new Question();
-        question1.setUserID("31601111");
+        question1.setUserID(userID);
+        String question= (String) map.get("question");
         question1.setQuestion(question);
+        String detail= (String) map.get("detail");
         question1.setDetail(detail);
         String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
         long time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(date).getTime();
@@ -63,14 +69,15 @@ public class QuestionController {
         question1.setCreateTime(changeTime);
         int result=questionMapper.addQuestion(question1);
         int questionID=questionMapper.findLargestQuestionID();
-        Map<String,Object> map=new HashMap<String ,Object>();
+        Map<String,Object> map1=new HashMap<String ,Object>();
         if(result>0){
-            map.put("code",0);
-            map.put("questionID",questionID);
+            map1.put("code",0);
+            map1.put("questionID",questionID);
         }
+
         else{
-            map.put("code",-1);
+            map1.put("code",-1);
         }
-        return map;
+        return map1;
     }
 }

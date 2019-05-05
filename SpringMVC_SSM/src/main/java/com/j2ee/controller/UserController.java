@@ -3,14 +3,12 @@ package com.j2ee.controller;
 import com.j2ee.mapper.UserMapper;
 import com.j2ee.po.User;
 import com.j2ee.service.UserService;
+import com.j2ee.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -18,23 +16,24 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Controller
+@CrossOrigin
 @RequestMapping("/user")
 public class UserController {
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     @ResponseBody
-    public Map login(HttpServletRequest request){
+    public Map login(@RequestBody User user) throws Exception {
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
         UserMapper userMapper=applicationContext.getBean(UserMapper.class);
         Map<String,Object> map = new HashMap<String,Object>();
-        String userID = request.getParameter("userID");
-        String pwd = request.getParameter("pwd");
-        User user=userMapper.findUserByID(userID);
-        if(user == null||!user.getPwd().equals(pwd)){
+
+        User user1=userMapper.findUserByID(user.getUserID());
+        if(user1 == null||!user.getPwd().equals(user1.getPwd())){
             map.put("code", -1);
         }
         else {
             map.put("code", 0);
-            map.put("token", "1231231231");
+            map.put("token", JwtUtil.createToken(user.getUserID()));
+            map.put("name",user1.getName());
         }
         return map;
     }
