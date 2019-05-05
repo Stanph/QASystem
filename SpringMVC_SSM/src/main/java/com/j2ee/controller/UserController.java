@@ -29,14 +29,11 @@ public class UserController {
         String userID = request.getParameter("userID");
         String pwd = request.getParameter("pwd");
         User user=userMapper.findUserByID(userID);
-        if(user == null){
+        if(user == null||!user.getPwd().equals(pwd)){
             map.put("code", -1);
         }
-        else if(!user.getPwd().equals(pwd)){
-            map.put("code", 0);
-        }
         else {
-            map.put("code", 1);
+            map.put("code", 0);
             map.put("token", "1231231231");
         }
         return map;

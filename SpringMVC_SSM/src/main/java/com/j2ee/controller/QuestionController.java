@@ -31,7 +31,11 @@ public class QuestionController {
         for(int i=0;i<question.size();i++){
             Question question1=question.get(i);
             String detail=question1.getDetail();
-            String smallDetail=detail.substring(0,200);
+            int x=detail.length();
+            if(x>200){
+                x=200;
+            }
+            String smallDetail=detail.substring(0,x);
             question1.setDetail(smallDetail);
         }
         return question;
@@ -49,7 +53,6 @@ public class QuestionController {
     public Map addQuestion(String token,String question,String detail) throws ParseException {
         ApplicationContext applicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
         QuestionMapper questionMapper=applicationContext.getBean(QuestionMapper.class);
-        int before= questionMapper.findLargestQuestionID(); //无记录时 会出错
         Question question1=new Question();
         question1.setUserID("31601111");
         question1.setQuestion(question);
@@ -58,12 +61,12 @@ public class QuestionController {
         long time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(date).getTime();
         int changeTime = (int) (time / 1000);
         question1.setCreateTime(changeTime);
-        questionMapper.addQuestion(question1);
-        int after=questionMapper.findLargestQuestionID();
+        int result=questionMapper.addQuestion(question1);
+        int questionID=questionMapper.findLargestQuestionID();
         Map<String,Object> map=new HashMap<String ,Object>();
-        if(after==before+1){
+        if(result>0){
             map.put("code",0);
-            map.put("questionID",after);
+            map.put("questionID",questionID);
         }
         else{
             map.put("code",-1);

@@ -30,8 +30,9 @@ public class AnswerServiceImpl implements AnswerService {
     }
 
     @Override
-    public void addAnswer(Answer answer) {
-        this.answerMapper.addAnswer(answer);
+    public int addAnswer(Answer answer) {
+        int result=this.answerMapper.addAnswer(answer);
+        return  result;
     }
 
     @Override

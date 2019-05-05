@@ -8,7 +8,7 @@ public interface AnswerService {
     public int findLargestAnswerID();
     public List<Answer> findAnswerByQuestionID(int i);
     public List<Answer> findAnswerByUserID(String userID);
-    public void addAnswer(Answer answer);
+    public int addAnswer(Answer answer);
     public void deleteAnswer(int answerID);
     public void updateStar(Answer answer);
 }

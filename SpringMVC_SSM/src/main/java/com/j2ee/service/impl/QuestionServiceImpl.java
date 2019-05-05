@@ -40,9 +40,9 @@ public class QuestionServiceImpl implements QuestionService{
 	}
 
 	@Override
-	public void addQuestion(Question question) {
-
-		this.questionMapper.addQuestion(question);
+	public int addQuestion(Question question) {
+		int result=this.questionMapper.addQuestion(question);
+		return result;
 	}
 
 	@Override
