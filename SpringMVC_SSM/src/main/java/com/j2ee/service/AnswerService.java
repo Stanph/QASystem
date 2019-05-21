@@ -1,14 +1,18 @@
 package com.j2ee.service;
 
-import com.j2ee.po.Answer;
+import java.text.ParseException;
+import java.util.Map;
 
-import java.util.List;
-
+/**
+ * @author haopan
+ */
 public interface AnswerService {
-    public int findLargestAnswerID();
-    public List<Answer> findAnswerByQuestionID(int i);
-    public List<Answer> findAnswerByUserID(String userID);
-    public int addAnswer(Answer answer);
-    public void deleteAnswer(int answerID);
-    public void updateStar(Answer answer);
+    /**
+     * @param answerID
+     * @param token
+     * @return
+     */
+    Map answerStar(int answerID, String token) throws ParseException;
+    Map addAnswer(String token, int questionID, String answer) throws ParseException;
+
 }

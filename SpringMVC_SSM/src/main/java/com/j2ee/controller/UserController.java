@@ -1,58 +1,53 @@
 package com.j2ee.controller;
 
-import com.j2ee.mapper.UserMapper;
-import com.j2ee.po.User;
+import com.auth0.jwt.interfaces.Claim;
 import com.j2ee.service.UserService;
-import com.j2ee.util.JwtUtil;
+import com.j2ee.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.ui.Model;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-import java.util.HashMap;
 import java.util.Map;
 
 @Controller
 @CrossOrigin
 @RequestMapping("/user")
 public class UserController {
-    @RequestMapping(value = "/login",method = RequestMethod.POST)
-    @ResponseBody
-    public Map login(@RequestBody User user) throws Exception {
-        ApplicationContext applicationContext=new ClassPathXmlApplicationContext("applicationContext.xml");
-        UserMapper userMapper=applicationContext.getBean(UserMapper.class);
-        Map<String,Object> map = new HashMap<String,Object>();
+    @Autowired
+    private UserService userService;
 
-        User user1=userMapper.findUserByID(user.getUserID());
-        if(user1 == null||!user.getPwd().equals(user1.getPwd())){
-            map.put("code", -1);
+    @RequestMapping(value = "/home",method = RequestMethod.POST)
+    @ResponseBody
+    public Map getHomePage(@RequestBody(required=true) Map<String,Object> map){
+        String userID;
+        if(map.get("token")==null){
+            userID=(String) map.get("userID");
         }
         else {
-            map.put("code", 0);
-            map.put("token", JwtUtil.createToken(user.getUserID()));
-            map.put("name",user1.getName());
+            String token= (String) map.get("token");
+            Map<String, Claim> a = JwtUtil.verifyToken(token);
+            userID = JwtUtil.getAppUID(token);
         }
-        return map;
+        int type=(int) map.get("type");
+        Map result=userService.getHomePage(userID,type);
+        return result;
     }
-
-    //退出登陆
-    @RequestMapping(value = "/logout")
-    public String logout(HttpSession session){
-        session.invalidate();
-        return "redirect:login";
-    }
-
-    //接收页面请求的json数据，并返回json格式结果
-    @RequestMapping("/testJson")
+    @RequestMapping(value = "/login",method = RequestMethod.POST)
     @ResponseBody
-    public User testJson(@RequestBody User user){
-        //打印接收的json格式数据
-        System.out.println(user);
-        //返回json格式的响应
-        return user;
+    public Map login(@RequestBody(required=true) Map<String,Object> map) throws Exception {
+        String userID=(String) map.get("userID");
+        String pwd=(String) map.get("pwd");
+        Map result=userService.login(userID,pwd);
+        return result;
     }
 
+    @RequestMapping(value = "/changePwd",method = RequestMethod.POST)
+    @ResponseBody
+    public Map changePwd(@RequestBody(required = true) Map<String,Object> map){
+        String token = (String) map.get("token");
+        String pwd = (String)map.get("pwd");
+        String newPwd = (String)map.get("newPwd");
+        Map<String, Claim> a = JwtUtil.verifyToken(token);
+        Map result=userService.changePwd(token,pwd,newPwd);
+        return result;
+    }
 }

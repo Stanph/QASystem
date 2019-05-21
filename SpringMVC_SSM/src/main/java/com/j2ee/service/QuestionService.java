@@ -1,20 +1,12 @@
 package com.j2ee.service;
 
-import java.util.List;
+import java.text.ParseException;
+import java.util.Map;
 
-import com.j2ee.po.Question;
 
 public interface QuestionService {
-	public Question findQuestionWithAnswers(int questionID);
-	public int findLargestQuestionID();
-	public Question findQuestionByQuestionID(int questionID);
-	public List<Question> findAllQuestion(int offSet,int pageSize);
-	//查找用户的问题
-	public List<Question> findQuestionByUserID(String string);
-	//添加问题
-	public int addQuestion(Question question);
-	//删除问题
-	public void deleteQuestion(int i);
-	//更新问题赞数或流量
-	public void updateStarOrPageviews(Question question);
+	Map questionStar(int questionID, String token) throws ParseException;
+	Map questionList(int offSet, int num, int type);
+	Map questionDetail(int questionID, String token);
+	Map addQuestion(String token, String question, String detail) throws ParseException;
 }

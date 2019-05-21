@@ -1,10 +1,10 @@
 package com.j2ee.po;
 
-public class Star_question {
+public class StarQuestion {
 	private int questionID;
 	private String userID;
-	private int startTime;
-
+	private int starTime;
+	private Question question;
 	public int getQuestionID() {
 		return questionID;
 	}
@@ -17,11 +17,16 @@ public class Star_question {
 	public void setUserID(String userID) {
 		this.userID = userID;
 	}
-	public int getStartTime() {
-		return startTime;
+	public int getStarTime() {
+		return starTime;
 	}
-	public void setStartTime(int startTime) {
-		this.startTime = startTime;
+	public void setStarTime(int startTime) {
+		this.starTime = startTime;
 	}
-
+	public Question getQuestion() {
+		return question;
+	}
+	public void setQuestion(Question question) {
+		this.question = question;
+	}
 }

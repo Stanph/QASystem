@@ -8,15 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>login</title>
+    <title>Successful！</title>
 </head>
 <body>
-    ${msg}
-    <form action="${pageContext.request.contextPath}/user/login" method="post">
-        用户名：<input type="text" name="userID"/><br />
-        密&nbsp;&nbsp;&nbsp;码：<input type="password" name="pwd"/><br />
-        <input type="submit" value="LOGIN">
-
-    </form>
+    Hello spring！
 </body>
 </html>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.j2ee.mapper.StarAnswerMapper">
+	<select id="findUserStarAnswer" resultMap="StarAnswerWithAnswer">
+		select sa.answerID as sa_answerID,sa.userID as sa_userID,sa.startime as sa_startime, a.*
+		from starAnswer sa,answer a
+		where sa.answerID=a.answerID and sa.userID=#{0}
+		order by sa_startime desc limit #{1},#{2}
+	</select>
+	<resultMap id="StarAnswerWithAnswer" type="starAnswer">
+		<id property="answerID" column="sa_answerID"/>
+		<result property="userID" column="sa_userID"/>
+		<result property="starTime" column="sa_startime"/>
+		<association property="answer" javaType="Answer">
+			<id property="answerID" column="answerID"/>
+			<result property="questionID" column="questionID"/>
+			<result property="userID" column="userID"/>
+			<result property="createTime" column="createtime"/>
+			<result property="answer" column="answer"/>
+			<result property="star" column="star"/>
+		</association>
+	</resultMap>
+	<select id="starOrNot" parameterType="com.j2ee.po.StarAnswer" resultType="int">
+		select count(answerID) from starAnswer where answerID=#{answerID} and userID=#{userID}
+	</select>
+
+	<insert id="addAnswerStar" parameterType="com.j2ee.po.StarAnswer">
+		insert into starAnswer(answerID,userID,starTime)
+		values(#{answerID},#{userID},#{starTime})
+	</insert>
+	
+	<delete id="deleteAnswerStar" parameterType="com.j2ee.po.StarAnswer">
+		delete from starAnswer where answerID=#{answerID} and userID=#{userID}
+	</delete>
+</mapper>

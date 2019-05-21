@@ -21,22 +21,22 @@ public class JwtUtil {
     /** token秘钥，请勿泄露，请勿随便修改 backups:JKKLJOoasdlfj */
     public static final String SECRET = "JKKLJOoasdlfj";
     /** token 过期时间: 1天 */
-    public static final int calendarField = Calendar.DATE;
-    public static final int calendarInterval = 1;
+    public static final int CALENDAR_FIELD = Calendar.DATE;
+    public static final int CALENDAR_INTERVAL = 1;
 
     /**
      * JWT生成Token.
      *
      * JWT构成: header, payload, signature
      *
-     * @param user_id
-     *            登录成功后用户user_id, 参数user_id不可传空
+     * @param userID
+     *            登录成功后用户userID, 参数userID不可传空
      */
-        public static String createToken(String user_id) throws Exception {
+        public static String createToken(String userID) throws Exception {
         Date iatDate = new Date();
         // expire time
         Calendar nowTime = Calendar.getInstance();
-        nowTime.add(calendarField, calendarInterval);
+        nowTime.add(CALENDAR_FIELD, CALENDAR_INTERVAL);
         Date expiresDate = nowTime.getTime();
 
         // header Map
@@ -48,7 +48,7 @@ public class JwtUtil {
         // param backups {iss:Service, aud:APP}
         String token = JWT.create().withHeader(map) // header
                 .withClaim("iss", "Service") // payload
-                .withClaim("aud", "User").withClaim("user_id", null == user_id ? null : user_id.toString())
+                .withClaim("aud", "User").withClaim("userID", null == userID ? null : userID.toString())
                 .withIssuedAt(iatDate) // sign time
                 .withExpiresAt(expiresDate) // expire time
                 .sign(Algorithm.HMAC256(SECRET)); // signature
@@ -76,18 +76,18 @@ public class JwtUtil {
     }
 
     /**
-     * 根据Token获取user_id
+     * 根据Token获取userID
      *
      * @param token
-     * @return user_id
+     * @return userID
      */
     public static String getAppUID(String token) {
         Map<String, Claim> claims = verifyToken(token);
-        Claim user_id_claim = claims.get("user_id");
-        if (null == user_id_claim || StringUtils.isEmpty(user_id_claim.asString())) {
+        Claim userIDClaim = claims.get("userID");
+        if (null == userIDClaim || StringUtils.isEmpty(userIDClaim.asString())) {
             // token 校验失败, 抛出Token验证非法异常
         }
-        return (user_id_claim.asString());
+        return (userIDClaim.asString());
     }
 
 }

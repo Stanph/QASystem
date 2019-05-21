@@ -4,42 +4,48 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.j2ee.mapper.QuestionMapper">
 	<select id="findQuestionWithAnswers" parameterType="int" resultMap="QuestionWithAnswersResult">
-		select q.*,a.*
-		from question q, answer a
-		where q.questionID=a.questionID
-		and q.questionID=#{questionID}
+		select q.*,a.answerID as a_answerID,a.questionID as a_questionID,a.userID as a_userID,a.createtime as a_createtime,a.answer as a_answer,a.star as a_star
+		from question q left join answer a on q.questionID=a.questionID
+		where q.questionID=#{questionID}
 	</select>
 	<resultMap id="QuestionWithAnswersResult" type="Question">
 		<id property="questionID" column="questionID"></id>
 		<result property="userID" column="userID"/>
-		<result property="createTime" column="createTime"/>
+		<result property="createTime" column="createtime"/>
 		<result property="question" column="question"/>
 		<result property="detail" column="detail"/>
 		<result property="star" column="star"/>
 		<result property="pageviews" column="pageviews"/>
 		<collection property="answers" ofType="Answer">
-			<id property="answerID" column="answerID"/>
-			<result property="questionID" column="questionID"/>
-			<result property="userID" column="userID"/>
-			<result property="createTime" column="createTime"/>
-			<result property="answer" column="answer"/>
-			<result property="star" column="star"/>
+			<id property="answerID" column="a_answerID"/>
+			<result property="questionID" column="a_questionID"/>
+			<result property="userID" column="a_userID"/>
+			<result property="createTime" column="a_createtime"/>
+			<result property="answer" column="a_answer"/>
+			<result property="star" column="a_star"/>
 		</collection>
 	</resultMap>
 	<select id="findLargestQuestionID" resultType="int">
 		select max(questionID) from question
 	</select>
 	<select id="findAllQuestion" resultType="com.j2ee.po.Question">
-		select * from question limit #{0},#{1}
+		select * from question
+		order by createtime desc
+		limit #{0},#{1}
+	</select>
+	<select id="findAllQuestionByStar" resultType="com.j2ee.po.Question">
+		select * from question
+		order by Star desc
+		limit #{0},#{1}
 	</select>
 	<select id="findQuestionByUserID" parameterType="String" resultType="com.j2ee.po.Question">
-		select * from question where userID=#{userID}
+		select * from question where userID=#{userID} order by createtime desc
 	</select>
 	<select id="findQuestionByQuestionID" parameterType="int" resultType="com.j2ee.po.Question">
 		select * from question where questionID=#{questionID}
 	</select>
 	<insert id="addQuestion" parameterType="com.j2ee.po.Question">
-		insert into question(userID,createTime,question,detail)
+		insert into question(userID,createtime,question,detail)
 		values(#{userID},#{createTime},#{question},#{detail})
 	</insert>
 	
@@ -47,17 +53,19 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		delete from question where questionID = #{questionID}
 	</delete>
 	
-	<update id="updateStarOrPageviews" parameterType="com.j2ee.po.Question">
+	<update id="addStar" parameterType="int">
 		update question 
-		<set>
-			<if test="star!=null and star!=''">
-				star=star+#{star},
-			</if>
-			<if test="pageviews!=null and pageviews!=''">
-				pageviews=pageviews+1,
-			</if>
-		</set>
+		set	star=star+1
 		where questionID=#{questionID}
 	</update>
-	
+	<update id="deleteStar" parameterType="int">
+		update question
+		set	star=star-1
+		where questionID=#{questionID}
+	</update>
+	<update id="updatePageviews" parameterType="int">
+		update question
+		set pageviews=pageviews+1
+		where questionID=#{questionID}
+	</update>
 </mapper>
