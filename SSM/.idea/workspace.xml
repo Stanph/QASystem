@@ -11,89 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2869d773-092a-451a-91a1-357f629f9ed7" name="Default Changelist" comment="v2">
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/dictionaries/haopan.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/SpringMVC_SSM.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com.j2ee.po/Answer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com.j2ee.po/Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com.j2ee.po/Question.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com.j2ee.po/StarAnswer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com.j2ee.po/StarQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com.j2ee.po/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/controller/AnswerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/controller/PhotosController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/controller/QuestionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/controller/StarAnswerController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/controller/StarQuestionController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/AnswerMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/AnswerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/QuestionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/QuestionMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/StarAnswerMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/StarAnswerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/StarQuestionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/StarQuestionMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/AnswerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/QuestionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/StarAnswerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/StarQuestionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/impl/AnswerServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/impl/QuestionServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/impl/StarAnswerServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/impl/StarQuestionServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/impl/UserServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/test/TransactionTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/util/JwtUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/util/Md5Util.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/util/TimeUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/resources/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/resources/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/resources/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/resources/springmvc-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/webapp/js/jquery-1.11.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/META-INF/SpringMVC_SSM.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/com/j2ee/mapper/AnswerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/com/j2ee/mapper/QuestionMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/com/j2ee/mapper/StarAnswerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/com/j2ee/mapper/StarQuestionMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/com/j2ee/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/springmvc-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/jsp/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/js/jquery-1.11.3.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/META-INF/SpringMVC_SSM.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/com/j2ee/mapper/AnswerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/com/j2ee/mapper/QuestionMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/com/j2ee/mapper/StarAnswerMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/com/j2ee/mapper/StarQuestionMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/com/j2ee/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/springmvc-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../qasystem.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -108,11 +27,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/service/impl/QuestionServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="139" selection-start-line="139" selection-end-line="139" />
+            <state relative-caret-position="735">
+              <caret line="154" column="13" selection-start-line="154" selection-start-column="13" selection-end-line="154" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/util/KafkaConsumerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="738">
+              <caret line="41" column="35" lean-forward="true" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/util/KafkaProducerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -245,7 +188,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,10 +200,69 @@
               <item name="SSM" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j2ee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j2ee" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j2ee" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j2ee" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="j2ee" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -649,6 +650,8 @@
       <workItem from="1577357010398" duration="2873000" />
       <workItem from="1577360020374" duration="5177000" />
       <workItem from="1578902914569" duration="194000" />
+      <workItem from="1578903372946" duration="1168000" />
+      <workItem from="1578936350906" duration="45000" />
     </task>
     <servers />
   </component>
@@ -685,7 +688,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="327612000" />
+    <option name="totallyTimeSpent" value="328825000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -698,14 +701,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="71" y="23" width="1540" height="1129" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Web" order="4" sideWeight="0.1436837" side_tool="true" visible="true" weight="0.21094793" />
+      <window_info id="Web" order="4" sideWeight="0.14561234" side_tool="true" visible="true" weight="0.21628839" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.85631627" visible="true" weight="0.21094793" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" sideWeight="0.85438764" visible="true" weight="0.21628839" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.496063" weight="0.1388621" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -1014,16 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/util/KafkaProducerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1062,16 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/util/KafkaConsumerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1131,8 +1115,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/service/impl/QuestionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
+        <state relative-caret-position="735">
+          <caret line="154" column="13" selection-start-line="154" selection-start-column="13" selection-end-line="154" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/util/KafkaConsumerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="35" lean-forward="true" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/util/KafkaProducerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
