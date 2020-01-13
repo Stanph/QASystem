@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-COMPATIBLE" CONTENT="IE=edge,chrome=1">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link href="css/github-markdown.min.css" rel="stylesheet">  
+    <link href="js/styles/xcode.css" rel="stylesheet">
+    <title>ZUCC问答论坛</title>
+  </head>
+  <style>
+    ::-webkit-scrollbar {  
+      width: 7px;  
+      height: 4px;  
+      background-color: #F5F5F5;  
+    }  
+    /*定义滚动条轨道 内阴影+圆角*/  
+    ::-webkit-scrollbar-track {  
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+      background: #fff ;  
+    }  
+    /*定义滑块 内阴影+圆角*/  
+    ::-webkit-scrollbar-thumb {  
+      border-radius: 3px;  
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+      background-color:rgba(158, 158, 158, 0.7);  
+    }  
+    ::-webkit-scrollbar-thumb:hover {  
+      border-radius: 3px;  
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+      background-color:rgba(158, 158, 158, 1);  
+    }
+    [v-cloak]{
+	    display: none;
+    }
+    img{
+      max-width: 100%
+    }
+  </style>
+  <body>
+    <noscript>
+      <strong>We're sorry but qasys doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app" v-cloak></div>
+    <!-- built files will be auto injected -->
+    <script src="js/highlight.min.js"></script>
+    <script src="js/auto-render.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+      var getExplorer = (function () {
+        var explorer = window.navigator.userAgent,
+            compare = function (s) { return (explorer.indexOf(s) >= 0); },
+            ie11 = (function () { return ("ActiveXObject" in window) })();
+        if (compare("MSIE") || ie11) { return 'ie'; }
+        else if (compare("Firefox") && !ie11) { return 'Firefox'; }
+        else if (compare("Chrome") && !ie11) {
+            if (explorer.indexOf("Edge") > -1) {
+                return 'Edge';
+            } else {
+                return 'Chrome';
+            }
+        }
+        else if (compare("Opera") && !ie11) { return 'Opera'; }
+        else if (compare("Safari") && !ie11) { return 'Safari'; }
+
+    })()
+    if (getExplorer == 'ie') {
+        alert('当前浏览器内核为IE内核，存在兼容性问题，请使用非IE内核浏览器！');
+    }
+    else if (getExplorer == 'Edge') {
+        alert('当前浏览器为Microsoft Edge，存在兼容性问题，请使用非IE内核浏览器！');
+    }
+    </script>
+  </body>
+</html>

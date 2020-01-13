@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SPLITTER_PROPORTION" value="0.43299907" />
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SpringMVC_SSM:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2869d773-092a-451a-91a1-357f629f9ed7" name="Default Changelist" comment="v2">
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/dictionaries/haopan.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/SpringMVC_SSM.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com.j2ee.po/Answer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com.j2ee.po/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com.j2ee.po/Question.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com.j2ee.po/StarAnswer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com.j2ee.po/StarQuestion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com.j2ee.po/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/controller/AnswerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/controller/PhotosController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/controller/QuestionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/controller/StarAnswerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/controller/StarQuestionController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/AnswerMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/AnswerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/QuestionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/QuestionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/StarAnswerMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/StarAnswerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/StarQuestionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/StarQuestionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/AnswerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/QuestionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/StarAnswerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/StarQuestionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/impl/AnswerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/impl/QuestionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/impl/StarAnswerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/impl/StarQuestionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/test/TransactionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/util/JwtUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/util/Md5Util.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/java/com/j2ee/util/TimeUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/resources/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/resources/springmvc-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/src/main/webapp/js/jquery-1.11.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/META-INF/SpringMVC_SSM.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/com/j2ee/mapper/AnswerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/com/j2ee/mapper/QuestionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/com/j2ee/mapper/StarAnswerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/com/j2ee/mapper/StarQuestionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/com/j2ee/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/classes/springmvc-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/jsp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/SpringMVC_SSM/js/jquery-1.11.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/META-INF/SpringMVC_SSM.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/com/j2ee/mapper/AnswerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/com/j2ee/mapper/QuestionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/com/j2ee/mapper/StarAnswerMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/com/j2ee/mapper/StarQuestionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/com/j2ee/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringMVC_SSM/target/classes/springmvc-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qasystem.sql" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/service/impl/QuestionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="139" selection-start-line="139" selection-end-line="139" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>springSecurityFilterChain</find>
+      <find>war</find>
+      <find>log</find>
+      <find>S</find>
+      <find>CALENDARFIELD</find>
+      <find>star_answerService</find>
+      <find>star_answer</find>
+      <find>user_id</find>
+      <find>userID_claim</find>
+      <find>star_question</find>
+      <find>answer</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>CALENDAR_FIELD</replace>
+      <replace>starAnswerService</replace>
+      <replace>starAnswer</replace>
+      <replace>userID</replace>
+      <replace>userIDClaim</replace>
+      <replace>starQuestion</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/controller/Star_questionController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/service/impl/Star_answerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/service/Star_answerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/controller/Star_answerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/mapper/StarAnswerMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/util/JwtUtil.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/util/MD5.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com.j2ee.po/Answer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/util/Md5Util.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/springmvc-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/service/impl/StarAnswerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/service/impl/StarQuestionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/util/TimeUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/controller/AnswerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/controller/StarAnswerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/controller/StarQuestionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/service/impl/AnswerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/mapper/AnswerMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/mapper/QuestionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/mapper/StarAnswerMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/mapper/StarQuestionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/service/AnswerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/service/QuestionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/service/StarAnswerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/service/StarQuestionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/test/TransactionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/mapper/QuestionMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j2.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/controller/InitDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/controller/SearchController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/controller/Rest.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/controller/RestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/mapper/AnswerMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/controller/QuestionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/controller/PhotosController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/util/Consumer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/util/Producer.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/util/KafkaProducerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/util/KafkaConsumerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/j2ee/service/impl/QuestionServiceImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="71" />
+    <option name="y" value="23" />
+    <option name="width" value="1540" />
+    <option name="height" value="1129" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SSM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556370031782" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.21323529" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\j2ee-final\back-end\SpringMVC_SSM\src\main\java\com\j2ee\controller" />
+      <recent name="E:\j2ee-final\back-end\SpringMVC_SSM\src\main\java" />
+      <recent name="E:\j2ee-final\back-end\SpringMVC_SSM\src\main" />
+      <recent name="E:\j2ee-final\back-end\SpringMVC_SSM\src\com.j2ee.mapper" />
+      <recent name="E:\j2ee-final\back-end\SpringMVC_SSM\src\com.j2ee.po" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.j2ee.service.impl" />
+      <recent name="com.j2ee.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/j2ee/controller" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/j2ee/test" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/j2ee/util" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/js" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.17">
+    <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.j2ee.util.Consumer" />
+      <module name="SpringMVC_SSM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.j2ee.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaConsumerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.j2ee.util.KafkaConsumerTest" />
+      <module name="SpringMVC_SSM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.j2ee.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaProducerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.j2ee.util.KafkaProducerTest" />
+      <module name="SpringMVC_SSM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.j2ee.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Producer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.j2ee.util.Producer" />
+      <module name="SpringMVC_SSM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.j2ee.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestController.CatApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SpringMVC_SSM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.j2ee.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.j2ee.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.j2ee.controller.RestController" />
+      <option name="METHOD_NAME" value="CatApi" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.17" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.17" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:28080/SpringMVC_SSM/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <file path="$PROJECT_DIR$/target/SpringMVC_SSM">
+          <settings>
+            <option name="CONTEXT_PATH" value="/SpringMVC_SSM" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_SpringMVC_SSM_4" />
+        <option name="HTTP_PORT" value="28080" />
+        <option name="JNDI_PORT" value="21099" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50269" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.17" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
+      <deployment>
+        <artifact name="SpringMVC_SSM:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/api" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="index_jsp_SpringMVC_SSM_4" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="50653" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="SpringMVC_SSM:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Producer" />
+      <item itemvalue="Application.Consumer" />
+      <item itemvalue="Application.KafkaProducerTest" />
+      <item itemvalue="Application.KafkaConsumerTest" />
+      <item itemvalue="JUnit.RestController.CatApi" />
+      <item itemvalue="Tomcat Server.index.jsp" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.17" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.KafkaConsumerTest" />
+        <item itemvalue="Application.KafkaProducerTest" />
+        <item itemvalue="Application.Consumer" />
+        <item itemvalue="Application.Producer" />
+        <item itemvalue="JUnit.RestController.CatApi" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpringGeneralSettings">
+    <option name="allowAutoConfigurationMode" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2869d773-092a-451a-91a1-357f629f9ed7" name="Default Changelist" comment="" />
+      <created>1556083940599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556083940599</updated>
+      <workItem from="1556083942244" duration="25403000" />
+      <workItem from="1556199112249" duration="17617000" />
+      <workItem from="1556858122550" duration="1937000" />
+      <workItem from="1556860629893" duration="1672000" />
+      <workItem from="1556868775347" duration="58000" />
+      <workItem from="1556868837314" duration="426000" />
+      <workItem from="1556869266533" duration="495000" />
+      <workItem from="1556869764849" duration="15323000" />
+      <workItem from="1556929879118" duration="332000" />
+      <workItem from="1556930228388" duration="59000" />
+      <workItem from="1556930389897" duration="51000" />
+      <workItem from="1556930443459" duration="13000" />
+      <workItem from="1556930469322" duration="19557000" />
+      <workItem from="1556952924080" duration="4305000" />
+      <workItem from="1556957274483" duration="20454000" />
+      <workItem from="1557017765245" duration="1505000" />
+      <workItem from="1557026253498" duration="3748000" />
+      <workItem from="1557030652676" duration="348000" />
+      <workItem from="1557043008748" duration="1377000" />
+      <workItem from="1557047866172" duration="3875000" />
+      <workItem from="1557056363318" duration="4739000" />
+      <workItem from="1557062634693" duration="216000" />
+      <workItem from="1557105538619" duration="3953000" />
+      <workItem from="1557126660384" duration="8677000" />
+      <workItem from="1557137428576" duration="203000" />
+      <workItem from="1557384555034" duration="131000" />
+      <workItem from="1557386509847" duration="2632000" />
+      <workItem from="1557489418168" duration="8724000" />
+      <workItem from="1557625683114" duration="21738000" />
+      <workItem from="1557667953091" duration="1944000" />
+      <workItem from="1557670540103" duration="192000" />
+      <workItem from="1557704310232" duration="16349000" />
+      <workItem from="1557746243135" duration="1316000" />
+      <workItem from="1557748295072" duration="18766000" />
+      <workItem from="1557828686056" duration="7794000" />
+      <workItem from="1557837719425" duration="3990000" />
+      <workItem from="1557893882091" duration="2275000" />
+      <workItem from="1557900584734" duration="3910000" />
+      <workItem from="1557905974639" duration="456000" />
+      <workItem from="1557906434191" duration="3959000" />
+      <workItem from="1558064667499" duration="275000" />
+      <workItem from="1558069251317" duration="3117000" />
+      <workItem from="1558082100227" duration="1480000" />
+      <workItem from="1558090181768" duration="735000" />
+      <workItem from="1558091610045" duration="2871000" />
+      <workItem from="1558095312174" duration="1554000" />
+      <workItem from="1558096949376" duration="565000" />
+      <workItem from="1558097527683" duration="4549000" />
+      <workItem from="1558164983434" duration="4742000" />
+      <workItem from="1558172072411" duration="6329000" />
+      <workItem from="1558250864633" duration="5420000" />
+      <workItem from="1558335461434" duration="1856000" />
+      <workItem from="1558358525411" duration="347000" />
+      <workItem from="1558399637358" duration="162000" />
+      <workItem from="1558404620881" duration="2662000" />
+      <workItem from="1558483342131" duration="397000" />
+      <workItem from="1558496619955" duration="345000" />
+      <workItem from="1558509747384" duration="25000" />
+      <workItem from="1558511372243" duration="23000" />
+      <workItem from="1558513062577" duration="7000" />
+      <workItem from="1558516154025" duration="683000" />
+      <workItem from="1558517299394" duration="168000" />
+      <workItem from="1558517481617" duration="546000" />
+      <workItem from="1558518382053" duration="8088000" />
+      <workItem from="1558575066326" duration="641000" />
+      <workItem from="1558605259780" duration="2596000" />
+      <workItem from="1558662830381" duration="1612000" />
+      <workItem from="1558739700268" duration="618000" />
+      <workItem from="1558851382018" duration="6650000" />
+      <workItem from="1559007677742" duration="189000" />
+      <workItem from="1559228225995" duration="937000" />
+      <workItem from="1559266001465" duration="2122000" />
+      <workItem from="1559350867756" duration="512000" />
+      <workItem from="1559356742108" duration="1000" />
+      <workItem from="1560212985513" duration="1292000" />
+      <workItem from="1560233417916" duration="22000" />
+      <workItem from="1560487572603" duration="777000" />
+      <workItem from="1560696104772" duration="989000" />
+      <workItem from="1560702510562" duration="474000" />
+      <workItem from="1560729424157" duration="1615000" />
+      <workItem from="1560781413870" duration="1245000" />
+      <workItem from="1560799583840" duration="2538000" />
+      <workItem from="1577240493771" duration="1311000" />
+      <workItem from="1577244614628" duration="1663000" />
+      <workItem from="1577246877419" duration="2711000" />
+      <workItem from="1577318556866" duration="11388000" />
+      <workItem from="1577357010398" duration="2873000" />
+      <workItem from="1577360020374" duration="5177000" />
+      <workItem from="1578902914569" duration="194000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="RestController_QueryByField - 2019.05.26 at 16h 27m 32s.xml">
+      <configuration name="RestController.QueryByField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestController_QueryByField - 2019.05.26 at 16h 27m 45s.xml">
+      <configuration name="RestController.QueryByField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestController_QueryByField - 2019.05.26 at 16h 28m 05s.xml">
+      <configuration name="RestController.QueryByField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestController_QueryByField - 2019.05.26 at 16h 28m 30s.xml">
+      <configuration name="RestController.QueryByField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestController_QueryByField - 2019.05.26 at 16h 30m 17s.xml">
+      <configuration name="RestController.QueryByField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestController_getDocument - 2019.05.31 at 10h 37m 16s.xml">
+      <configuration name="RestController.getDocument" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestController_QueryByField - 2019.05.31 at 12h 20m 52s.xml">
+      <configuration name="RestController.QueryByField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestController_QueryByField - 2019.05.31 at 12h 21m 03s.xml">
+      <configuration name="RestController.QueryByField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestController_QueryByField - 2019.05.31 at 12h 21m 36s.xml">
+      <configuration name="RestController.QueryByField" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestController_CatApi - 2019.06.11 at 08h 30m 16s.xml">
+      <configuration name="RestController.CatApi" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="327612000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="71" y="23" width="1540" height="1129" extended-state="0" />
+    <layout>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Capture Tool" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Web" order="4" sideWeight="0.1436837" side_tool="true" visible="true" weight="0.21094793" />
+      <window_info id="Designer" order="5" />
+      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.85631627" visible="true" weight="0.21094793" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.496063" weight="0.1388621" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5016465" side_tool="true" weight="0.39922854" />
+      <window_info anchor="bottom" id="Java Enterprise" order="3" sideWeight="0.49754903" weight="0.3297975" />
+      <window_info anchor="bottom" id="Messages" order="4" sideWeight="0.5612745" weight="0.32883316" />
+      <window_info anchor="bottom" id="Database Changes" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.498366" weight="0.3297975" />
+      <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.49919224" weight="0.32983023" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Find" order="9" sideWeight="0.7756156" weight="0.29587713" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.81778264" weight="0.44840887" />
+      <window_info anchor="bottom" id="Debug" order="11" sideWeight="0.49835345" weight="0.39922854" />
+      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="14" sideWeight="0.4983845" weight="0.3297975" />
+      <window_info anchor="bottom" id="Application Servers" order="15" sideWeight="0.6065652" weight="0.3297975" />
+      <window_info anchor="bottom" id="Inspection Results" order="16" sideWeight="0.8933764" visible="true" weight="0.32983023" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="JSF" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="v2" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/mapper/StarAnswerMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/util/TimeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/controller/StarAnswerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/controller/SearchController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/controller/InitDemo.java" />
+    <entry file="file://$PROJECT_DIR$/SpringMVC_SSM.iml" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.5/httpcore-4.4.5.jar!/org/apache/http/util/EntityUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2467">
+          <folding>
+            <element signature="e#0#5554#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="65" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.j2ee.po/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/controller/StarQuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.j2ee.po/Answer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j2.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/service/AnswerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/service/impl/StarQuestionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="76" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/springmvc-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/mapper/AnswerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/mapper/AnswerMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/service/QuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/controller/RestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/util/JwtUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="53" column="27" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/mapper/StarAnswerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/util/Consumer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/util/Producer.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/service/impl/AnswerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/util/Md5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.1.9.RELEASE/spring-tx-4.1.9.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <element signature="e#3928#3929#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.2.RELEASE/spring-aop-4.2.2.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12456">
+          <caret line="747" column="19" selection-start-line="747" selection-start-column="19" selection-end-line="747" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/mapper/QuestionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.2.RELEASE/spring-aop-4.2.2.RELEASE-sources.jar!/org/springframework/aop/support/AopUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="301" selection-start-line="301" selection-end-line="301" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/util/KafkaProducerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.j2ee.po/StarQuestion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.j2ee.po/StarAnswer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/mapper/QuestionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/service/StarQuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/util/KafkaConsumerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/controller/PhotosController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/controller/AnswerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1098">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/controller/QuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="21" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com.j2ee.po/Question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/j2ee/service/impl/QuestionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21323529" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>SpringMVC_SSM:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21323529" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (SpringMVC_SSM)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21323529" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21323529" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21323529" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>SpringMVC_SSM</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21323529" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: mysql:mysql-connector-java:8.0.12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.21323529" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
