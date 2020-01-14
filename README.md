@@ -7,7 +7,9 @@
 课堂问答系统为学生提供了一个新的提问和解决问题的渠道，不仅方便了教师收集和回答学生的问题，还能提高课堂问题反馈效率和知识再利用率。
 
 前端：使用Vue框架和Vuetify组件库
+
 后端：使用的是SSM框架和Express框架，并利用Kafka和ElasticSearch提供消息推送服务和全文检索服务。
+
 数据库：使用MySql，并利用Mysql binlog将数据同步到ElasticSearch中。
 
 ## 项目结构图
@@ -85,6 +87,7 @@ node index.js
 ```
 
 运行QASystemStructure.sql建立MySql数据库
+
 运行QASystemData.sql插入数据（可选）
 
 使用vue cli 3.x版本的UI界面运行项目
@@ -96,37 +99,48 @@ vue ui
 浏览器访问`http://localhost:8000`打开Vue CLI的可视化管理界面，点击导入，选择git clone下的Vue文件。导入后，点击`任务-build-运行`后生成dist文件。
 
 将tomcat目录中webapps/ROOT下的所有文件替换为dist中的文件
+
 SSM后端部分打成war包复制到tomcat目录下的webapps里
+
 访问网站http://localhost:8080
 
 ## 项目运行展示
 首页
+
 问题列表可按时间或收藏量排序
 ![index.png](index.png)
 
 提问页面
+
 提供Markdown编辑
 ![AddQuestion.png](AddQuestion.png)
 
 问题详情及回答页面
+
 提供收藏问题和回答的功能
+
 提供浏览量统计功能
 ![QuestionDetail.png](QuestionDetail.png)
 
 搜索页面
+
 对问题及回答全文检索，关键字高亮显示
 ![search.png](search.png)
 
 个人主页
+
 提供统计信息功能
+
 显示本人问题及回答
 ![home.png](home.png)
 
 点对点消息推送
+
 通过监听回答表insert事件，当此问题所属用户socket.io保持连接时直接向前端推送回答，当其未连接时，将回答存进ES中，在该用户登录后进行推送。
 ![MessageA.png](MessageA.png)
 
 发布与订阅消息推送
+
 教师所提问题存入Kafka，学生登录后自动拉取。
 ![MessageQ.png](MessageQ.png)
 
@@ -153,6 +167,7 @@ SSM后端部分打成war包复制到tomcat目录下的webapps里
 
 ## 未来工作
 设置一级学科和二级学科类别（见ClassStructure.sql），划分课程进行管理。
+
 搜索框改用v-autocomplete做相关内容推荐。
 
 
