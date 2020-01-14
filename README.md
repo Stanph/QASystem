@@ -152,7 +152,7 @@ SSM后端部分打成war包复制到tomcat目录下的webapps里
 - Kafka消息推送
 
 ## 未来工作
-设置一级学科和二级学科类别，划分课程进行管理。
+设置一级学科和二级学科类别（见ClassStructure.sql），划分课程进行管理。
 搜索框改用v-autocomplete做相关内容推荐。
 
 
